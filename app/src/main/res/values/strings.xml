@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RafKhata</string>
+    <string name="blog_details">Blog Details</string>
+    <string name="post_author_label">Posted by:</string>
+    <string name="post_author_name">Hassan Abdullah</string>
+    <string name="post_date_label">Modified Date:</string>
+</resources>
