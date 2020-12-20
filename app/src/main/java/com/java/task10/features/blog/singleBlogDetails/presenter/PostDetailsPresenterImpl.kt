@@ -6,6 +6,7 @@ import com.java.task10.features.blog.singleBlogDetails.model.PostDetailsModel
 import com.java.task10.features.blog.singleBlogDetails.model.PostDetailsModelImpl
 import com.java.task10.features.blog.singleBlogDetails.view.PostDetailsView
 
+@Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
 class PostDetailsPresenterImpl(
     private val view: PostDetailsView
 ): PostDetailsPresenter {

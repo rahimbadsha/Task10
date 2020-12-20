@@ -21,7 +21,7 @@ class MainActivity : BaseActivity(), PostListView {
     //Variable declaration here
     private lateinit var presenter: PostListPresenter
 
-
+    //Override method here
     override fun setLayoutId(): Int = R.layout.activity_main
 
     override fun setToolbar(): Toolbar {
@@ -61,7 +61,6 @@ class MainActivity : BaseActivity(), PostListView {
 
 
 // Activity Methods
-
     @SuppressLint("WrongConstant")
     private fun initPostListAdapter(postList: MutableList<PostData>) {
 
