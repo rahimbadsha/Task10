@@ -49,7 +49,7 @@ class MainActivity : BaseActivity(), PostListView {
         Toast.makeText(this, errorMessage, Toast.LENGTH_LONG).show()
     }
 
-    // Oncreate Method
+    // Oncreate Method Here
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -59,30 +59,23 @@ class MainActivity : BaseActivity(), PostListView {
 
     }
 
-
-// Activity Methods
+// Activity Methods HERE
     @SuppressLint("WrongConstant")
     private fun initPostListAdapter(postList: MutableList<PostData>) {
 
         val postAdapter = PostListAdapter(postList, object: OnItemClickPostList{
             override fun onPostItemClickListener(position: Int) {
-                //showToast(postList[position].title.rendered)
-
                 val intent = Intent(this@MainActivity, SinglePostDetailsActivity::class.java)
                 val bundle = Bundle()
                 bundle.putInt("postId", postList[position].id)
 
                 intent.putExtras(bundle)
                 startActivity(intent)
-
-                Toast.makeText(this@MainActivity, postList[position].title.rendered, Toast.LENGTH_LONG).show()
             }
-
         })
 
         recyclerView.layoutManager = LinearLayoutManager(this,
             LinearLayoutManager.VERTICAL, false)
         recyclerView.adapter = postAdapter
     }
-
 }

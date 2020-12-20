@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RafKhata</string>
+    <string name="app_name">Blog Posts</string>
     <string name="blog_details">Blog Details</string>
     <string name="post_author_label">Posted by:</string>
     <string name="post_author_name">Hassan Abdullah</string>
