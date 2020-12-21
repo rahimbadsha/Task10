@@ -18,6 +18,7 @@ import kotlinx.android.synthetic.main.toolbar.*
 
 class MainActivity : BaseActivity(), PostListView {
 
+    //This branch is for code review
     //Variable declaration here
     private lateinit var presenter: PostListPresenter
 
